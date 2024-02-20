@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0; 
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    height: 603px;
+    margin: auto;
+    /* border: solid 2px red; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+@keyframes animacao-band {
+    from {
+        width: 600px;
+      }
+      to {
+        width: 0px;
+        
+      }
+}
+
+@keyframes animacao-img {
+    from {
+        transform: translateX(980px);
+      }
+      to {
+        transform: translateX(0);
+        
+      }
+}
+
+@keyframes animacao-nav {
+    from {
+        transform: translateX(980px);
+      }
+      to {
+        transform: translateX(0);
+        
+      }
+}
+
+@keyframes animacao-header {
+    from {
+        width: 0;
+      }
+      to {
+        width: 980px;
+        
+      }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.1);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+      }
+}
+
+@keyframes cor {
+    0% {
+        background: #2bff00;
+      }
+      100% {
+        background: #000;
+      }
+}
+
+
+.header {
+    border: solid 3px #000;
+    border-width: 5px 0px 0px 0px;
+    background: #fff;
+    /* border: solid 2px blue; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    animation-name: animacao-header;
+    animation-duration: 2s; 
+}
+
+
+.nav {
+    position: relative;
+    bottom: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3dd145;
+    border-width: 6px 0px 3px 0px;
+    animation-name: animacao-nav;
+    animation-duration: 2s;
+}
+
+.preto {
+    position: relative;
+    top: 19px;
+    background: #000;
+    height: 35px;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    animation-name: animacao-header;
+    animation-duration: 2s; 
+}
+
+a { 
+    font-size: 0.9em;
+    color: #ccd6d6;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    letter-spacing: 2px;
+    animation-name: fade-down;
+    animation-duration: 5s;
+}
+
+a:hover {
+    color: #2bff00;
+}
+
+a:active {
+    color: #1fbb00;
+}
+
+
+h3 {
+    color: #979797;
+}
+
+h4 {
+    color: #979797;
+}
+
+h5 {
+    color: #fff;
+    font-size: 1em;
+}
+
+h6 {
+    color: #fff;
+}
+
+.lista {
+    position: relative;
+    bottom: 81px;
+    /* background: #000; */
+    height: 30px;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 4px;
+    
+}
+
+
+.brasil {
+    position: relative;
+    bottom: 472px;
+    left: 592px;
+    
+}
+
+.guitarra {
+    position: relative;
+    left: 631px;
+    top: 1px;
+    animation-name: animacao-img;
+    animation-duration: 2s;
+}
+
+.conteudohome {
+    margin-top: -60px;
+    background: #000000;
+    animation-name: fade-down;
+    animation-duration: 2s;
+    animation-name: cor;
+    animation-duration: 2s;
+}
+
+.conteudo {
+    height: 499px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.conteudobio {
+    margin-top: -60px;
+    height: 499px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.conteudomusicas {
+    margin-top: -60px;
+    height: 499px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.conteudofotos {
+    margin-top: -60px;
+    height: 499px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.conteudocontato {
+    margin-top: -60px;
+    height: 499px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.form {
+    margin: auto;
+    
+}
+
+.nomeform {
+    color: #f5f52e;
+}
+
+.caixinhaform {
+    color: #f5f52e;
+}
+
+#nome {
+    background-color: #000;
+    border: 2px solid #f5f52e;
+    padding: 5px;
+}
+
+#botao {
+    background: #f5f52e;
+    padding: 5px;
+    position: relative;
+    left: 200px;
+}
+
+.textorak {
+    /* border: 2px solid green; */
+    width: 530px;
+    height: 499px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5px;
+    /* animation-name: animacao-body;
+    animation-duration: 3s; */
+}
+
+.caixacor {
+    border: 1px solid #3dd145;
+    background: #000000;
+    margin: 15px;
+    border-radius: 50px 0 50px 0;
+}
+
+.caixacorfoto {
+    /* border: 1px solid #3dd145; */
+    margin: 15px;
+}
+
+.caixacorcontato {
+    /* border: 1px solid #3dd145; */
+    margin: 15px;
+}
+
+.caixacormusica {
+    /* border: 1px solid #3dd145; */
+    background: #000000;
+    margin: 15px;
+    /* border-radius: 50px 0 50px 0; */
+}
+
+.cima {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cimamusica {
+    display: flex;
+    justify-content: center;
+}
+
+
+.meio {
+    display: flex;
+    padding: 40px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+} 
+
+.meiomusica {
+    position: relative;
+    left: 50px;
+    padding: 40px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.meiofoto {
+    display: flex;
+    padding: 40px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.meiocontato {
+    display: flex;
+    padding: 40px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.baixo {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.baixofoto {
+        display: flex;
+        padding: 5px;
+        justify-content: flex-end;
+    }
+
+
+.muitobaixo {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    font-size: 1.4em;
+}
+
+.imagens {
+    /* border: 2px solid blue; */
+    width: 349px;
+    height: 499px;
+    
+}
+
+.texto {
+    color: #929191;
+}
+
+.textofoto {
+    color: #fff;
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-list {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .menu-open {
+        display: none;
+    }
+
+    .conteudohome {
+        margin-top: 10px;
+    }
+
+    .guitarra,
+    .brasil {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .rodape {
+        padding: 10px;
+        text-align: center;
+    }
+}
